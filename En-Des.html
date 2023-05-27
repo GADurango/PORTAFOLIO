@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Encriptador/Desencriptador</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Encriptador/Desencriptador</h1>
+  
+  <form id="encryptionForm">
+    <label for="inputText">Texto:</label>
+    <textarea id="inputText" rows="4" cols="50"></textarea>
+    <br>
+    <button type="button" onclick="encryptText()">Encriptar</button>
+    <button type="button" onclick="decryptText()">Desencriptar</button>
+  </form>
+
+  <div id="resultSection">
+    <label for="resultText">Resultado:</label>
+    <textarea id="resultText" rows="4" cols="50" readonly></textarea>
+  </div>
+
+  <div id="messageSection"></div>
+  <div class="signature"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
